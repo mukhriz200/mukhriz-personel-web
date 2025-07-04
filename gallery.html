@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</style>
+<style>
+body {
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+.gallery-title {
+  text-align: center;
+  font-size: 2.2em;
+  color: #4f8cff;
+  margin-top: 40px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(79,140,255,0.13);
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px auto 0 auto;
+  max-width: 1200px;
+}
+.card {
+  box-shadow: 0 4px 24px 0 rgba(79,140,255,0.13);
+  transition: 0.3s;
+  width: 220px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e0eafc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  box-shadow: 0 8px 32px 0 rgba(79,140,255,0.18);
+  border-color: #b6e0fe;
+  transform: translateY(-6px) scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  display: block;
+  margin: 0;
+  transition: filter 0.3s;
+  filter: saturate(0.7);
+}
+.card:hover img {
+  filter: brightness(1.08) saturate(1.05);
+}
+.card-caption {
+  padding: 14px 0 16px 0;
+  text-align: center;
+  color: #4f8cff;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff; 
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-radius: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+li {
+  margin: 0 15px;
+}
+a {
+  color: #4f8cff;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 8px;
+  font-weight: 500;
+}
+a:hover {
+  background-color: #3b6bbf;
+  border-radius: 4px;
+  color: #ffffff;
+}
+</style>
+</style>
+</head>
+<body>
+  
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="biodata.html">Biodata</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="gallery-title">Photo Gallery</div>
+  <div class="gallery-container">
+    <div class="card">
+      <img src="2.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="card">
+      <img src="3.jpg" alt="Gallery Image 3">
+    </div>
+    <div class="card">
+      <img src="5.jpg" alt="Gallery Image 5">
+    </div>
+    <div class="card">
+      <img src="6.jpg" alt="Gallery Image 6">
+    </div>
+    <div class="card">
+      <img src="7.jpg" alt="Gallery Image 7">
+    </div>
+    <div class="card">
+      <img src="8.jpg" alt="Gallery Image 8">
+    </div>
+    <div class="card">
+      <img src="9.jpg" alt="Gallery Image 9">
+    </div>
+    <div class="card">
+      <img src="family.jpg" alt="Gallery Image 10">
+    </div>
+  </div>
+</body>
+</html>

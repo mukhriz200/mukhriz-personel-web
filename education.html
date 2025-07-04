@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</style>
+<style>
+body {
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+.gallery-title {
+  text-align: center;
+  font-size: 2.2em;
+  color: #4f8cff;
+  margin-top: 40px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(79,140,255,0.13);
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px auto 0 auto;
+  max-width: 1200px;
+}
+.card {
+  box-shadow: 0 4px 24px 0 rgba(79,140,255,0.13);
+  transition: 0.3s;
+  width: 220px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e0eafc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  box-shadow: 0 8px 32px 0 rgba(79,140,255,0.18);
+  border-color: #b6e0fe;
+  transform: translateY(-6px) scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  display: block;
+  margin: 0;
+  transition: filter 0.3s;
+}
+.card:hover img {
+  filter: brightness(1.08) saturate(1.05);
+  transition: filter 0.4s;
+}
+.card-caption {
+  padding: 14px 0 16px 0;
+  text-align: center;
+  color: #4f8cff;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  background-color: #fff; 
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-radius: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+li {
+  display: inline;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #4f8cff;
+  padding: 14px 20px;
+  display: inline-block;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+a:hover, a.active {
+  background-color: #4f8cff;
+  color: #fff;
+}
+</style>
+</style>
+</head>
+<body>
+  
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="biodata.html">Biodata</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="gallery-title">Education</div>
+  <div class="gallery-container">
+    <div class="card">
+      <div class="card-caption" style="padding-bottom: 0; padding-top: 14px;">2011</div>
+      <img src="st.john.jpg" alt="Gallery Image 2">
+      <div class="card-caption">St.John's Primary School</div>
+    </div>
+    <div class="card">
+      <div class="card-caption" style="padding-bottom: 0; padding-top: 14px;">2014</div>
+      <img src="skjdp.jpg" alt="Gallery Image 3">
+      <div class="card-caption">Sekolah Kebangsaan Jalan Dato' Palembang</div>
+    </div>
+    <div class="card">
+      <div class="card-caption" style="padding-bottom: 0; padding-top: 14px;">2017</div>
+      <img src="stsd.jpg" alt="Gallery Image 5">
+      <div class="card-caption">St.David High School</div>
+    </div>
+    <div class="card">
+      <div class="card-caption" style="padding-bottom: 0; padding-top: 14px;">2018</div>
+      <img src="mhs.jpg" alt="Gallery Image 6">
+      <div class="card-caption">Malacca High School</div>
+    </div>
+    <div class="card">
+      <div class="card-caption" style="padding-bottom: 0; padding-top: 14px;">2023</div>
+      <img src="uitmcj.jpg" alt="Gallery Image 7">
+      <div class="card-caption">University Technology Mara</div>
+    </div>
+
+
+
+</html></body>  </div>  </div>
+</body>
+</html>

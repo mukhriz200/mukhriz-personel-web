@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-radius: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+li {
+  float: none;
+  margin: 0 8px;
+}
+li a {
+  display: block;
+  color: #22223b;
+  text-align: center;
+  padding: 12px 22px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 0 rgba(79,140,255,0);
+}
+li a:hover, li a.active {
+  background: #4f8cff;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.13);
+}
+.header {
+  padding: 40px 0 24px 0;
+  font-size: 44px;
+  text-align: center;
+  background: transparent;
+  color: #22223b;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(79,140,255,0.08);
+  margin-bottom: 0;
+}
+</style>
+<style>
+.clock {
+  color: #4f8cff;
+  font-size: 2.2rem;
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(79,140,255,0.13);
+}
+</style>
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="biodata.html">Biodata</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+   <li><a href="contact.html">Contact</a></li>
+   
+
+</ul>
+
+
+
+<div class="header">
+  <h2>HEY LADS! WELCOME TO:<br> MUKHRIZ'S PERSONAL WEBSITE</h2>
+  <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+</div>
+</body>
+</html>
+<script>
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    if(h == 0){
+        h = 12;
+    }
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    setTimeout(showTime, 1000);
+}
+showTime();
+</script>
+
+<div style="display: flex; justify-content: center; margin-top: 32px;">
+  <audio controls autoplay style="width: 320px; max-width: 90%;">
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="TERANG (outro).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+</body>
+</html>
